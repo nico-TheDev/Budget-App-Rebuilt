@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="all.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header class="display">
+        <div class="display__container">
+            <p class="display__date">
+                Available Budget in May 2020:
+            </p>
+            <h2 class="display__budget">+123.00</h2>
+            <div class="display__field display__field--income">
+                <span class="display__label">INCOME</span>
+                <span class="display__income">+100.00</span>
+            </div>
+            <div class="display__field display__field--expenses">
+                <span class="display__label">EXPENSES</span>
+                <span class="display__expense">-50.00</span>
+                <span class="display__percentage">50%</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="input">
+        <div class="container">
+            <select name="" id="type" class="input__type">
+                <option value="inc">+</option>
+                <option value="exp">-</option>
+            </select>
+            <input type="text" class="input__desc" placeholder="Add description">
+            <input type="number" class="input__value" placeholder="Value">
+            <button class="input__btn"><i class="fas fa-check"></i></button>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="income">
+            <h3 class="items__title items__title--inc">INCOME</h3>
+            <!-- <div class="item" id="inc-0">
+                <span class="item__desc">Hotdog</span>
+                <span class="item__value">+ 100.00</span>
+                <button class="item__delete"><i class="fas fa-times"></i></button>
+            </div> -->
+        </div>
+        <div class="expenses">
+            <h3 class="items__title items__title--exp">EXPENSES</h3>
+            <!-- <div class="item" id="inc-0">
+                <span class="item__desc">Cheese</span>
+                <span class="item__value">- 50.00</span>
+                <span class="item__percentage">50%</span>
+                <button class="item__delete"><i class="fas fa-times"></i></button>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
